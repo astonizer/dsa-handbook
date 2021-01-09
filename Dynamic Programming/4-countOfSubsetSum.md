@@ -98,11 +98,11 @@ int countOfSubsetSum(int a[], int sum, int n) {
     int dp[n+1][sum+1];
 
     // Without elements in array, there is no possible way to get the sum
-    for(int j=1; j<=n; j++)
+    for(int j=1; j<=sum; j++)
         dp[0][j] = 0;
 
     // For (sum=0), there is always one way possible to neglect all elements
-    for(int i=0; i<=sum; i++)
+    for(int i=0; i<=n; i++)
         dp[i][0] = 1;        
     
     for(int i=1;i<=n;i++)

@@ -97,11 +97,11 @@ bool subsetSum(int a[], int sum, int n) {
     bool dp[n+1][sum+1];
 
     // Declare initial values of dp array
-    for(int j=1; j<=n; j++)
+    for(int j=1; j<=sum; j++)
         dp[0][j] = false;
 
     // Setting (sum = 0) values as true because it will always be satisfied 
-    for(int i=0; i<=sum; i++)
+    for(int i=0; i<=n; i++)
         dp[i][0] = true;        
     
     for(int i=1;i<=n;i++)

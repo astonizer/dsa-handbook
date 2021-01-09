@@ -11,3 +11,4 @@ To aid you in the process, helful comments are added before each step.
 - [Equal Partition](https://github.com/astonizer/dsa-handbook/blob/main/Dynamic%20Programming/3-equalPartition.md)
 - [Count of Subset Sum](https://github.com/astonizer/dsa-handbook/blob/main/Dynamic%20Programming/4-countOfSubsetSum.md)
 - [Minimum Subset Sum Difference](https://github.com/astonizer/dsa-handbook/blob/main/Dynamic%20Programming/5-minimumSubsetSumDifference.md)
+- [Count of Subsets With Given Difference](https://github.com/astonizer/dsa-handbook/blob/main/Dynamic%20Programming/6-countSubsetsWithGivenDifference.md)

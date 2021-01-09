@@ -2,7 +2,7 @@
 ##### Time Complexity  :  O(w*n)  => As traversing through entire matrix is done
 ##### Space Complexity :  O(w*n)  => WxN Matrix is used for storing
 
-####    Here, we convert the recursive method to iterative approach, all the recursive calls are converted to just setting that value in matrix and all the conditions remain the same.
+####    We directly implement it in an iterative manner
 
 ```
 int minimumSubsetSumDifference(int a[], int arraySum, int n) {
@@ -10,11 +10,11 @@ int minimumSubsetSumDifference(int a[], int arraySum, int n) {
     int dp[n+1][arraySum+1];
 
     // Without elements in array, there is no possible way to get the arraySum
-    for(int j=1; j<=n; j++)
+    for(int j=1; j<=arraySum; j++)
         dp[0][j] = 0;
 
     // For (sum=0), there is always one way possible to neglect all elements
-    for(int i=0; i<=arraySum; i++)
+    for(int i=0; i<=n; i++)
         dp[i][0] = 1;        
     
     for(int i=1;i<=n;i++)
